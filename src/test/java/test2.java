@@ -1,13 +1,23 @@
+import Persistence.FileExporter;
 import org.junit.Test;
+import punto1.ProveedorDeFecha;
 import punto2.*;
+
+import java.io.IOException;
+import java.time.LocalDateTime;
 
 import static org.junit.Assert.assertTrue;
 
 public class test2 {
 
     @Test
-    public void testVisa() {
-        var mesa = new Mesa();
+    public void testVisa() throws IOException {
+        var mesa = new Mesa(new FileExporter("C:/Users/gaspa.DAMI/Desktop/archivotest.txt"), new ProveedorDeFecha() {
+            @Override
+            public LocalDateTime fecha() {
+                return LocalDateTime.now();
+            }
+        });
         var b1 = new ItemMenu("bebida", 2500);
         var b2 = new ItemMenu("bebida", 3000);
         var p1 = new ItemMenu("plato", 15000);
@@ -29,8 +39,13 @@ public class test2 {
     }
 
     @Test
-    public void testMaster() {
-        var mesa = new Mesa();
+    public void testMaster() throws IOException {
+        var mesa = new Mesa(new FileExporter("C:/Users/gaspa.DAMI/Desktop/archivotest.txt"), new ProveedorDeFecha() {
+            @Override
+            public LocalDateTime fecha() {
+                return LocalDateTime.now();
+            }
+        });
         var b1 = new ItemMenu("bebida", 2500);
         var b2 = new ItemMenu("bebida", 3000);
         var p1 = new ItemMenu("plato", 15000);
@@ -52,8 +67,13 @@ public class test2 {
     }
 
     @Test
-    public void testComarca() {
-        var mesa = new Mesa();
+    public void testComarca() throws IOException {
+        var mesa = new Mesa(new FileExporter("C:/Users/gaspa.DAMI/Desktop/archivotest.txt"), new ProveedorDeFecha() {
+            @Override
+            public LocalDateTime fecha() {
+                return LocalDateTime.now();
+            }
+        });
         var b1 = new ItemMenu("bebida", 2500);
         var b2 = new ItemMenu("bebida", 3000);
         var p1 = new ItemMenu("plato", 15000);
@@ -75,8 +95,13 @@ public class test2 {
     }
 
     @Test
-    public void testViedma() {
-        var mesa = new Mesa();
+    public void testViedma() throws IOException {
+        var mesa = new Mesa(new FileExporter("C:/Users/gaspa.DAMI/Desktop/archivotest.txt"), new ProveedorDeFecha() {
+            @Override
+            public LocalDateTime fecha() {
+                return LocalDateTime.now();
+            }
+        });
         var b1 = new ItemMenu("bebida", 2500);
         var b2 = new ItemMenu("bebida", 3000);
         var p1 = new ItemMenu("plato", 15000);

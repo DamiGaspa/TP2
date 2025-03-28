@@ -1,23 +1,33 @@
-package punto1;
+package Persistence;
+
+import punto1.Exportador;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.Objects;
 
-public class FileExporter1 implements Exportador {
-    private final File archivo;
+public class FileExporter implements Exportador {
 
-    public FileExporter1(String filePath) {
-        this.archivo = new File(filePath);
+    private String path;
+
+    public FileExporter(String path) {
+        this.path = Objects.requireNonNull(path);
     }
 
-    public void export(String data) {
-        //String fechaHora = LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-        //String registro = fechaHora + ", " + idParticipante + ", " + idConcurso + "\n";
-        try (FileWriter writer = new FileWriter(archivo, true)) {
-            writer.write(data);
+    public void export(String registro) {
+        try {
+            File archivo = new File(path);
+            if (!archivo.exists()) {
+                archivo.createNewFile();
+            }
+            Files.write(Paths.get(this.path),
+                    registro.getBytes(),
+                    StandardOpenOption.APPEND);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("No se pudo persistir...", e);
         }
     }
 }

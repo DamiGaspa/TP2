@@ -1,22 +1,14 @@
 package punto1;
 
+import java.io.IOException;
+
 public class Inscripcion {
     private Concurso concurso;
     private Participante participante;
 
-    public void inscribirParticipante(Participante participante, Concurso concurso) {
+    public void inscribirParticipante(Participante participante, Concurso concurso) throws IOException {
         if (verificarFecha(participante, concurso)) {
-            concurso.inscribirParticipante(participante);
-        } else {
-            System.out.println("La fecha de inscripcion expiró.");
-        }
-    }
-
-    public void inscribirParticipanteManual(Participante participante, Concurso concurso) {
-        participante.fechaManual(2025, 4, 1);
-        if (verificarFecha(participante, concurso)) {
-            concurso.inscribirParticipante(participante);
-
+            concurso.inscribir(participante);
         } else {
             System.out.println("La fecha de inscripcion expiró.");
         }

@@ -3,11 +3,13 @@ package punto1;
 import java.time.LocalDate;
 
 public class Participante {
+    private int id;
     private LocalDate fecha;
     private boolean inscripto;
     private int puntos;
 
-    public Participante() {
+    public Participante(int id) {
+        this.id = id;
         this.fecha = LocalDate.now();
         this.inscripto = false;
         this.puntos = 0;
@@ -31,5 +33,9 @@ public class Participante {
 
     public void sumarPuntos(int puntos) {
         this.puntos += puntos;
+    }
+
+    public int getId() {
+        return id;
     }
 }

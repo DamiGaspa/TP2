@@ -12,4 +12,8 @@ public class ItemMenu {
     public double obtenerPrecio() {
         return precio;
     }
+
+    public String nombre() {
+        return descripcion;
+    }
 }
