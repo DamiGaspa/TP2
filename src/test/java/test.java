@@ -12,7 +12,7 @@ public class test {
 
     @Test
     public void test1() throws IOException {
-        var p1 = new Participante(1);
+        var p1 = new Participante(1, "participante1@gmail.com");
         p1.fechaManual(new FakeProveedorDeFecha().fecha());
         var c1 = new Concurso(1, new FileExporter("C:/Users/gaspa.DAMI/Desktop/archivoprueba.txt"), new FakeProveedorDeFecha());
         var inscripcion = new Inscripcion();
@@ -26,7 +26,7 @@ public class test {
 
     @Test
     public void test2() throws IOException {
-        var p1 = new Participante(2);
+        var p1 = new Participante(2, "participante2@gmail.com");
         p1.fechaManual(new FakeProveedorDeFecha().fecha());
         var c1 = new Concurso(2, new FileExporter("C:/Users/gaspa.DAMI/Desktop/archivoprueba.txt"), new FakeProveedorDeFecha());
         var inscripcion = new Inscripcion();

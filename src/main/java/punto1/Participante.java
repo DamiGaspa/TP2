@@ -7,13 +7,14 @@ public class Participante {
     private LocalDate fecha;
     private boolean inscripto;
     private int puntos;
+    private String email;
 
-    public Participante(int id) {
+    public Participante(int id, String email) {
         this.id = id;
         this.fecha = LocalDate.now();
         this.inscripto = false;
         this.puntos = 0;
-
+        this.email = email;
     }
 
     public void seInscribio() {
@@ -38,5 +39,9 @@ public class Participante {
 
     public int getId() {
         return id;
+    }
+
+    public String email() {
+        return email;
     }
 }
