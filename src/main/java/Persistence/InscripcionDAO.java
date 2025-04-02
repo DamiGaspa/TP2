@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 public class InscripcionDAO {
 
-    public static void registrarInscripcion(int idParticipante, int idConcurso) {
+    public static void registrarInscripcion(int idParticipante, int idConcurso, String email) {
         String sql = "INSERT INTO Inscripciones (fecha, id_participante, id_concurso) VALUES (?, ?, ?)";
 
         try (Connection conn = ConectionDB.conectar()) {
@@ -19,6 +19,10 @@ public class InscripcionDAO {
 
                 stmt.executeUpdate();
                 System.out.println("Inscripción registrada en la BD.");
+
+                String asunto = "Inscripción Confirmada";
+                String mensaje = "¡Hola! Te has inscrito exitosamente en el concurso #" + idConcurso;
+                EmailSender.enviarEmail(email, asunto, mensaje);
             }
         } catch (SQLException e) {
             System.out.println("Error al registrar inscripción: " + e.getMessage());

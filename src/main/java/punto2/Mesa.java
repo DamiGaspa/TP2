@@ -53,14 +53,14 @@ public class Mesa {
 
     public void sumarBebida(ItemMenu bebida) throws IOException {
         bebidas.add(bebida);
-        String menu = this.proveedor.fecha().toString() + "||" + bebida.obtenerPrecio();
+        String menu = this.proveedor.fecha().toString() + "||" + bebida.obtenerPrecio() + "\n";
         this.registro.export(menu);
         CostoComidaDAO.registrarCosto(bebida.obtenerPrecio());
     }
 
     public void sumarPlato(ItemMenu plato) throws IOException {
         platos.add(plato);
-        String menu = this.proveedor.fecha().toString() + "||" + plato.obtenerPrecio();
+        String menu = this.proveedor.fecha().toString() + "||" + plato.obtenerPrecio() + "\n";
         this.registro.export(menu);
         CostoComidaDAO.registrarCosto(plato.obtenerPrecio());
     }

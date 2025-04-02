@@ -1,14 +1,9 @@
 package Persistence;
 
-import com.google.protobuf.Message;
-import com.mysql.cj.xdevapi.Session;
-import jakarta.mail.MessagingException;
-import jakarta.mail.Transport;
+import jakarta.mail.*;
 import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeMessage;
 
-import java.net.Authenticator;
-import java.net.PasswordAuthentication;
 import java.util.Properties;
 
 public class EmailSender {

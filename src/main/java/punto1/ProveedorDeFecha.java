@@ -1,7 +1,7 @@
 package punto1;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public interface ProveedorDeFecha {
-    LocalDateTime fecha();
+    LocalDate fecha();
 }

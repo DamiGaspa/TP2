@@ -13,6 +13,7 @@ public class Participante {
         this.fecha = LocalDate.now();
         this.inscripto = false;
         this.puntos = 0;
+
     }
 
     public void seInscribio() {
@@ -27,8 +28,8 @@ public class Participante {
         return this.fecha;
     }
 
-    public void fechaManual(int anio, int mes, int dia) {
-        this.fecha = LocalDate.of(anio, mes, dia);
+    public void fechaManual(LocalDate unaFecha) {
+        this.fecha = unaFecha;
     }
 
     public void sumarPuntos(int puntos) {

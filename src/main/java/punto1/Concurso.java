@@ -46,7 +46,7 @@ public class Concurso {
         p.seInscribio();
         String datos = this.proveedor.fecha().toString() + "||" + p.getId() + "\n";
         this.registro.export(datos);
-        InscripcionDAO.registrarInscripcion(p.getId(), this.obtenerId());
+        InscripcionDAO.registrarInscripcion(p.getId(), this.obtenerId(), "damigasparini96@gmail.com");
     }
 
     public boolean existeParticipante(Participante p) {
