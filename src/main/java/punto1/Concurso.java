@@ -1,6 +1,6 @@
 package punto1;
 
-import Persistence.InscripcionDAO;
+import Persistence.FakeInscripcion;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -46,7 +46,8 @@ public class Concurso {
         p.seInscribio();
         String datos = this.proveedor.fecha().toString() + "||" + p.getId() + "\n";
         this.registro.export(datos);
-        InscripcionDAO.registrarInscripcion(p.getId(), this.obtenerId(), p.email());
+        FakeInscripcion exportDB = new FakeInscripcion();
+        exportDB.export(p.getId(), this.obtenerId(), p.email());
     }
 
     public boolean existeParticipante(Participante p) {

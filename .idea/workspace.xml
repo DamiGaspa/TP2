@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f94fcfeb-00c5-4bbd-98b0-a253bd739f59" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/FakeInscripcion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/InscripcionDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/FileExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/FileExporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/InscripcionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/InscripcionDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/punto1/Concurso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto1/Concurso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/punto1/Participante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto1/Participante.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,12 +97,12 @@
       <recent name="punto2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.test2.testMaster">
-    <configuration name="test2.testFinal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.test2.testComarca">
+    <configuration name="test2.testComarca" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TP1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="test2" />
-      <option name="METHOD_NAME" value="testFinal" />
+      <option name="METHOD_NAME" value="testComarca" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test2.testMaster" />
+        <item itemvalue="JUnit.test2.testComarca" />
+        <item itemvalue="JUnit.test.test1" />
         <item itemvalue="JUnit.test2.testVisa" />
         <item itemvalue="JUnit.test.test2" />
-        <item itemvalue="JUnit.test.test1" />
-        <item itemvalue="JUnit.test2.testFinal" />
+        <item itemvalue="JUnit.test2.testMaster" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +206,8 @@
       <workItem from="1743200407432" duration="383000" />
       <workItem from="1743204048537" duration="868000" />
       <workItem from="1743613451587" duration="2269000" />
-      <workItem from="1743630311075" duration="113000" />
+      <workItem from="1743630311075" duration="186000" />
+      <workItem from="1743799161301" duration="3855000" />
     </task>
     <servers />
   </component>

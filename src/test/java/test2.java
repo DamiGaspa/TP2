@@ -10,7 +10,7 @@ public class test2 {
 
     @Test
     public void testVisa() throws IOException {
-        var mesa = new Mesa(new FileExporter("C:/Users/gaspa.DAMI/Desktop/archivotest.txt"), new FakeProveedorDeFecha());
+        var mesa = new Mesa(new FileExporter(), new FakeProveedorDeFecha());
         var b1 = new ItemMenu("bebida", 2500);
         var b2 = new ItemMenu("bebida", 3000);
         var p1 = new ItemMenu("plato", 15000);
@@ -33,7 +33,7 @@ public class test2 {
 
     @Test
     public void testMaster() throws IOException {
-        var mesa = new Mesa(new FileExporter("C:/Users/gaspa.DAMI/Desktop/archivotest.txt"), new FakeProveedorDeFecha());
+        var mesa = new Mesa(new FileExporter(), new FakeProveedorDeFecha());
         var b1 = new ItemMenu("bebida", 2500);
         var b2 = new ItemMenu("bebida", 3000);
         var p1 = new ItemMenu("plato", 15000);
@@ -56,7 +56,7 @@ public class test2 {
 
     @Test
     public void testComarca() throws IOException {
-        var mesa = new Mesa(new FileExporter("C:/Users/gaspa.DAMI/Desktop/archivotest.txt"), new FakeProveedorDeFecha());
+        var mesa = new Mesa(new FileExporter(), new FakeProveedorDeFecha());
         var b1 = new ItemMenu("bebida", 2500);
         var b2 = new ItemMenu("bebida", 3000);
         var p1 = new ItemMenu("plato", 15000);
@@ -79,7 +79,7 @@ public class test2 {
 
     @Test
     public void testViedma() throws IOException {
-        var mesa = new Mesa(new FileExporter("C:/Users/gaspa.DAMI/Desktop/archivotest.txt"), new FakeProveedorDeFecha());
+        var mesa = new Mesa(new FileExporter(), new FakeProveedorDeFecha());
         var b1 = new ItemMenu("bebida", 2500);
         var b2 = new ItemMenu("bebida", 3000);
         var p1 = new ItemMenu("plato", 15000);

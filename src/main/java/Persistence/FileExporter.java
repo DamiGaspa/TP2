@@ -7,23 +7,18 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
-import java.util.Objects;
 
 public class FileExporter implements Exportador {
 
-    private String path;
-
-    public FileExporter(String path) {
-        this.path = Objects.requireNonNull(path);
-    }
+    private static final String DIRECCION_LOCAL = "C:/Users/gaspa/Desktop/punto1.txt";
 
     public void export(String registro) {
         try {
-            File archivo = new File(path);
+            File archivo = new File(DIRECCION_LOCAL);
             if (!archivo.exists()) {
                 archivo.createNewFile();
             }
-            Files.write(Paths.get(this.path),
+            Files.write(Paths.get(this.DIRECCION_LOCAL),
                     registro.getBytes(),
                     StandardOpenOption.APPEND);
         } catch (IOException e) {

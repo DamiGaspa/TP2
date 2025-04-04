@@ -5,9 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.time.LocalDate;
 
-public class InscripcionDAO {
+public class FakeInscripcion implements InscripcionDB {
 
-    public static void registrarInscripcion(int idParticipante, int idConcurso, String email) {
+    public void export(int idParticipante, int idConcurso, String email) {
         String sql = "INSERT INTO Inscripciones (fecha, id_participante, id_concurso) VALUES (?, ?, ?)";
 
         try (Connection conn = ConectionDB.conectar()) {
