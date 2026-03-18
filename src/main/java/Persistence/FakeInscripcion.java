@@ -10,7 +10,7 @@ public class FakeInscripcion implements InscripcionDB {
     public void export(int idParticipante, int idConcurso, String email) {
         String sql = "INSERT INTO Inscripciones (fecha, id_participante, id_concurso) VALUES (?, ?, ?)";
 
-        try (Connection conn = ConectionDB.conectar()) {
+        try (Connection conn = ConnectionDB.conectar()) {
             try (PreparedStatement stmt = conn.prepareStatement(sql)) {
 
                 stmt.setDate(1, java.sql.Date.valueOf(LocalDate.now()));

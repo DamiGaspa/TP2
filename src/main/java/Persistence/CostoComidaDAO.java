@@ -10,7 +10,7 @@ public class CostoComidaDAO {
     public static void registrarCosto(double monto) {
         String sql = "INSERT INTO CostosComidas (fecha, monto) VALUES (?, ?)";
 
-        try (Connection conn = ConectionDB.conectar();
+        try (Connection conn = ConnectionDB.conectar();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setDate(1, java.sql.Date.valueOf(LocalDate.now()));
