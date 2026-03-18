@@ -1,6 +1,6 @@
 package Persistence;
 
-import punto1.Exportador;
+import punto1.Exporter;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
-public class FileExporter implements Exportador {
+public class FileExporter implements Exporter {
 
     private static final String DIRECCION_LOCAL = "C:/Users/gaspa/Desktop/punto1.txt";
 

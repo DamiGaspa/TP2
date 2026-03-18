@@ -1,8 +1,8 @@
-import Persistence.FileExporter;
+import Persistence.FileExport;
 import org.junit.Test;
-import punto1.Concurso;
-import punto1.Inscripcion;
-import punto1.Participante;
+import punto1.Contest;
+import punto1.Inscription;
+import punto1.Participant;
 
 import java.io.IOException;
 
@@ -12,10 +12,10 @@ public class test {
 
     @Test
     public void test1() throws IOException {
-        var p1 = new Participante(1, "participante1@gmail.com");
-        p1.fechaManual(new FakeProveedorDeFecha().fecha());
-        var c1 = new Concurso(1, new FileExporter(), new FakeProveedorDeFecha());
-        var inscripcion = new Inscripcion();
+        var p1 = new Participant(1, "participante1@gmail.com");
+        p1.fechaManual(new FakeDateProvider().fecha());
+        var c1 = new Contest(1, new FileExport(), new FakeDateProvider());
+        var inscripcion = new Inscription();
 
         inscripcion.inscribirParticipante(p1, c1);
         System.out.println("Cantidad de inscriptos: " + c1.obtenerCantidadParticipantes());
@@ -26,10 +26,10 @@ public class test {
 
     @Test
     public void test2() throws IOException {
-        var p1 = new Participante(2, "participante2@gmail.com");
-        p1.fechaManual(new FakeProveedorDeFecha().fecha());
-        var c1 = new Concurso(2, new FileExporter(), new FakeProveedorDeFecha());
-        var inscripcion = new Inscripcion();
+        var p1 = new Participant(2, "participante2@gmail.com");
+        p1.fechaManual(new FakeDateProvider().fecha());
+        var c1 = new Contest(2, new FileExport(), new FakeDateProvider());
+        var inscripcion = new Inscription();
 
         inscripcion.inscribirParticipante(p1, c1);
         System.out.println("Cantidad de inscriptos: " + c1.obtenerCantidadParticipantes());
