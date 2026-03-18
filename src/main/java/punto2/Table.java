@@ -1,8 +1,8 @@
 package punto2;
 
-import Persistence.CostoComidaDAO;
-import punto1.Exportador;
-import punto1.ProveedorDeFecha;
+import Persistence.FoodCostDAO;
+import punto1.DateProvider;
+import punto1.Exporter;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -14,10 +14,10 @@ public class Mesa {
     private double costoPlatos;
     private List<ItemMenu> bebidas;
     private List<ItemMenu> platos;
-    private Exportador registro;
-    private ProveedorDeFecha proveedor;
+    private Exporter registro;
+    private DateProvider proveedor;
 
-    public Mesa(Exportador registro, ProveedorDeFecha proveedor) {
+    public Mesa(Exporter registro, DateProvider proveedor) {
         this.costoPlatos = 0;
         this.costoBebidas = 0;
         this.costoTotal = 0;
@@ -55,14 +55,14 @@ public class Mesa {
         bebidas.add(bebida);
         String menu = this.proveedor.fecha().toString() + "||" + bebida.obtenerPrecio() + "\n";
         this.registro.export(menu);
-        CostoComidaDAO.registrarCosto(bebida.obtenerPrecio());
+        FoodCostDAO.registrarCosto(bebida.obtenerPrecio());
     }
 
     public void sumarPlato(ItemMenu plato) throws IOException {
         platos.add(plato);
         String menu = this.proveedor.fecha().toString() + "||" + plato.obtenerPrecio() + "\n";
         this.registro.export(menu);
-        CostoComidaDAO.registrarCosto(plato.obtenerPrecio());
+        FoodCostDAO.registrarCosto(plato.obtenerPrecio());
     }
 
     public List<ItemMenu> getBebidas() {

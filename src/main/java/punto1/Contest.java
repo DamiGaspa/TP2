@@ -1,6 +1,6 @@
 package punto1;
 
-import Persistence.FakeInscripcion;
+import Persistence.FakeInscription;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -46,7 +46,7 @@ public class Concurso {
         p.seInscribio();
         String datos = this.proveedor.fecha().toString() + "||" + p.getId() + "\n";
         this.registro.export(datos);
-        FakeInscripcion exportDB = new FakeInscripcion();
+        FakeInscription exportDB = new FakeInscription();
         exportDB.export(p.getId(), this.obtenerId(), p.email());
     }
 
