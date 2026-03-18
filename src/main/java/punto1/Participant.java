@@ -2,14 +2,14 @@ package punto1;
 
 import java.time.LocalDate;
 
-public class Participante {
+public class Participant {
     private int id;
     private LocalDate fecha;
     private boolean inscripto;
     private int puntos;
     private String email;
 
-    public Participante(int id, String email) {
+    public Participant(int id, String email) {
         this.id = id;
         this.fecha = LocalDate.now();
         this.inscripto = false;

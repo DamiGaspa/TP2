@@ -1,9 +1,9 @@
 package punto2;
 
-public class Visa extends TarjetaCredito {
+public class VisaCard extends CreditCard {
     private double descuento;
 
-    public Visa() {
+    public VisaCard() {
         this.descuento = 0.03;
     }
 

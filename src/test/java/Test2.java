@@ -6,16 +6,16 @@ import java.io.IOException;
 
 import static org.junit.Assert.assertTrue;
 
-public class test2 {
+public class Test2 {
 
     @Test
     public void testVisa() throws IOException {
-        var mesa = new Mesa(new FileExporter(), new FakeProveedorDeFecha());
-        var b1 = new ItemMenu("bebida", 2500);
-        var b2 = new ItemMenu("bebida", 3000);
-        var p1 = new ItemMenu("plato", 15000);
-        var p2 = new ItemMenu("plato", 18000);
-        var tarjeta = new Visa();
+        var mesa = new Table(new FileExporter(), new FakeDateProvider());
+        var b1 = new MenuItem("bebida", 2500);
+        var b2 = new MenuItem("bebida", 3000);
+        var p1 = new MenuItem("plato", 15000);
+        var p2 = new MenuItem("plato", 18000);
+        var tarjeta = new VisaCard();
         mesa.sumarBebida(b1);
         mesa.sumarBebida(b2);
         mesa.sumarPlato(p1);
@@ -33,12 +33,12 @@ public class test2 {
 
     @Test
     public void testMaster() throws IOException {
-        var mesa = new Mesa(new FileExporter(), new FakeProveedorDeFecha());
-        var b1 = new ItemMenu("bebida", 2500);
-        var b2 = new ItemMenu("bebida", 3000);
-        var p1 = new ItemMenu("plato", 15000);
-        var p2 = new ItemMenu("plato", 18000);
-        var tarjeta = new MasterCard();
+        var mesa = new Table(new FileExporter(), new FakeDateProvider());
+        var b1 = new MenuItem("bebida", 2500);
+        var b2 = new MenuItem("bebida", 3000);
+        var p1 = new MenuItem("plato", 15000);
+        var p2 = new MenuItem("plato", 18000);
+        var tarjeta = new Mastercard();
         mesa.sumarBebida(b1);
         mesa.sumarBebida(b2);
         mesa.sumarPlato(p1);
@@ -56,12 +56,12 @@ public class test2 {
 
     @Test
     public void testComarca() throws IOException {
-        var mesa = new Mesa(new FileExporter(), new FakeProveedorDeFecha());
-        var b1 = new ItemMenu("bebida", 2500);
-        var b2 = new ItemMenu("bebida", 3000);
-        var p1 = new ItemMenu("plato", 15000);
-        var p2 = new ItemMenu("plato", 18000);
-        var tarjeta = new ComarcaPlus();
+        var mesa = new Table(new FileExporter(), new FakeDateProvider());
+        var b1 = new MenuItem("bebida", 2500);
+        var b2 = new MenuItem("bebida", 3000);
+        var p1 = new MenuItem("plato", 15000);
+        var p2 = new MenuItem("plato", 18000);
+        var tarjeta = new ComarcaPlusCard();
         mesa.sumarBebida(b1);
         mesa.sumarBebida(b2);
         mesa.sumarPlato(p1);
@@ -79,12 +79,12 @@ public class test2 {
 
     @Test
     public void testViedma() throws IOException {
-        var mesa = new Mesa(new FileExporter(), new FakeProveedorDeFecha());
-        var b1 = new ItemMenu("bebida", 2500);
-        var b2 = new ItemMenu("bebida", 3000);
-        var p1 = new ItemMenu("plato", 15000);
-        var p2 = new ItemMenu("plato", 18000);
-        var tarjeta = new Viedma();
+        var mesa = new Table(new FileExporter(), new FakeDateProvider());
+        var b1 = new MenuItem("bebida", 2500);
+        var b2 = new MenuItem("bebida", 3000);
+        var p1 = new MenuItem("plato", 15000);
+        var p2 = new MenuItem("plato", 18000);
+        var tarjeta = new ViedmaCard();
         mesa.sumarBebida(b1);
         mesa.sumarBebida(b2);
         mesa.sumarPlato(p1);

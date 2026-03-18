@@ -1,5 +1,5 @@
 package punto2;
 
-public interface Exportador {
+public interface Exporter {
     void export(String data);
 }

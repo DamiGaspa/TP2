@@ -1,9 +1,9 @@
 package punto2;
 
-public class Viedma extends TarjetaCredito {
+public class ViedmaCard extends CreditCard {
     private double descuento;
 
-    public Viedma() {
+    public ViedmaCard() {
         this.descuento = 0;
     }
 

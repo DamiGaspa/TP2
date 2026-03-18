@@ -1,6 +1,6 @@
 package punto2;
 
-import Persistence.FoodCostDAO;
+import Persistence.CostoComidaDAO;
 import punto1.DateProvider;
 import punto1.Exporter;
 
@@ -8,16 +8,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Mesa {
+public class Table {
     private double costoTotal;
     private double costoBebidas;
     private double costoPlatos;
-    private List<ItemMenu> bebidas;
-    private List<ItemMenu> platos;
+    private List<MenuItem> bebidas;
+    private List<MenuItem> platos;
     private Exporter registro;
     private DateProvider proveedor;
 
-    public Mesa(Exporter registro, DateProvider proveedor) {
+    public Table(Exporter registro, DateProvider proveedor) {
         this.costoPlatos = 0;
         this.costoBebidas = 0;
         this.costoTotal = 0;
@@ -28,7 +28,7 @@ public class Mesa {
     }
 
     public double calcularCostoBebidas() {
-        for (ItemMenu bebida : bebidas) {
+        for (MenuItem bebida : bebidas) {
             this.costoBebidas += bebida.obtenerPrecio();
 
         }
@@ -36,7 +36,7 @@ public class Mesa {
     }
 
     public double calcularCostoPlatos() {
-        for (ItemMenu plato : platos) {
+        for (MenuItem plato : platos) {
             this.costoPlatos += plato.obtenerPrecio();
         }
         return costoPlatos;
@@ -51,25 +51,25 @@ public class Mesa {
         return precio * propina;
     }
 
-    public void sumarBebida(ItemMenu bebida) throws IOException {
+    public void sumarBebida(MenuItem bebida) throws IOException {
         bebidas.add(bebida);
         String menu = this.proveedor.fecha().toString() + "||" + bebida.obtenerPrecio() + "\n";
         this.registro.export(menu);
-        FoodCostDAO.registrarCosto(bebida.obtenerPrecio());
+        CostoComidaDAO.registrarCosto(bebida.obtenerPrecio());
     }
 
-    public void sumarPlato(ItemMenu plato) throws IOException {
+    public void sumarPlato(MenuItem plato) throws IOException {
         platos.add(plato);
         String menu = this.proveedor.fecha().toString() + "||" + plato.obtenerPrecio() + "\n";
         this.registro.export(menu);
-        FoodCostDAO.registrarCosto(plato.obtenerPrecio());
+        CostoComidaDAO.registrarCosto(plato.obtenerPrecio());
     }
 
-    public List<ItemMenu> getBebidas() {
+    public List<MenuItem> getBebidas() {
         return bebidas;
     }
 
-    public List<ItemMenu> getPlatos() {
+    public List<MenuItem> getPlatos() {
         return platos;
     }
 

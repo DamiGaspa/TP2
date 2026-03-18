@@ -1,9 +1,9 @@
 package punto2;
 
-public class MasterCard extends TarjetaCredito {
+public class Mastercard extends CreditCard {
     private double descuento;
 
-    public MasterCard() {
+    public Mastercard() {
         this.descuento = 0.02;
     }
 

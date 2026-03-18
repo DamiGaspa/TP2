@@ -1,10 +1,10 @@
 package punto2;
 
-public class ItemMenu {
+public class MenuItem {
     private String descripcion;
     private double precio;
 
-    public ItemMenu(String descripcion, double precio) {
+    public MenuItem(String descripcion, double precio) {
         this.descripcion = descripcion;
         this.precio = precio;
     }

@@ -2,6 +2,6 @@ package punto1;
 
 import java.time.LocalDate;
 
-public interface ProveedorDeFecha {
+public interface DateProvider {
     LocalDate fecha();
 }

@@ -5,14 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f94fcfeb-00c5-4bbd-98b0-a253bd739f59" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/FakeInscripcion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/InscripcionDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/FileExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/FileExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/InscripcionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/InscripcionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/punto1/Concurso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto1/Concurso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/ConnectionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/ConnectionDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/EmailSend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/EmailSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/FakeInscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/FakeInscripcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/FoodCostDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/CostoComidaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/InscriptionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/InscripcionDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/punto1/Contest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto1/Contest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/punto1/DateProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto1/DateProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/punto1/Exporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto1/Exporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/punto1/Inscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto1/Inscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/punto1/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto1/Participant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/punto2/ComarcaPlusCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto2/ComarcaPlusCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/punto2/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto2/CreditCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/punto2/Exporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto2/Exporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/punto2/Mastercard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto2/Mastercard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/punto2/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto2/MenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/punto2/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto2/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/punto2/ViedmaCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto2/ViedmaCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/punto2/VisaCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/punto2/VisaCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FakeDateProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FakeDateProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,71 +72,74 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2u0ZrtMXQbYgvrsaj8Rq3nsns1e" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test.test1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test.test2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test2.test3.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test2.testComarca.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test2.testFinal.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test2.testMaster.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test2.testViedma.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test2.testVisa.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;TP2&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Mi unidad/LICENCIATURA EN SISTEMAS/3ER AÑO/Orientacion a Objetos 2/Práctica/TP1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.test.executor": "Run",
+    "JUnit.Test2.testComarca.executor": "Run",
+    "JUnit.test.test1.executor": "Run",
+    "JUnit.test.test2.executor": "Run",
+    "JUnit.test2.test3.executor": "Run",
+    "JUnit.test2.testComarca.executor": "Run",
+    "JUnit.test2.testFinal.executor": "Run",
+    "JUnit.test2.testMaster.executor": "Run",
+    "JUnit.test2.testViedma.executor": "Run",
+    "JUnit.test2.testVisa.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "G:/Mi unidad/LICENCIATURA EN SISTEMAS/3ER AÑO/Orientacion a Objetos 2/Práctica/TP1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="punto2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.test2.testComarca">
-    <configuration name="test2.testComarca" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Test2.testComarca">
+    <configuration name="Test2.testComarca" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TP1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test2" />
+      <option name="MAIN_CLASS_NAME" value="Test2" />
       <option name="METHOD_NAME" value="testComarca" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test2.testMaster" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test2.testMaster" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TP1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test2" />
+      <option name="MAIN_CLASS_NAME" value="Test2" />
       <option name="METHOD_NAME" value="testMaster" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test2.testVisa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test2.testVisa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TP1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test2" />
+      <option name="MAIN_CLASS_NAME" value="Test2" />
       <option name="METHOD_NAME" value="testVisa" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -150,19 +168,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test2.testComarca" />
+        <item itemvalue="JUnit.Test2.testComarca" />
         <item itemvalue="JUnit.test.test1" />
-        <item itemvalue="JUnit.test2.testVisa" />
+        <item itemvalue="JUnit.Test2.testVisa" />
         <item itemvalue="JUnit.test.test2" />
-        <item itemvalue="JUnit.test2.testMaster" />
+        <item itemvalue="JUnit.Test2.testMaster" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
       </set>
     </attachedChunks>
   </component>
@@ -208,6 +226,10 @@
       <workItem from="1743613451587" duration="2269000" />
       <workItem from="1743630311075" duration="186000" />
       <workItem from="1743799161301" duration="3855000" />
+      <workItem from="1773871220029" duration="7000" />
+      <workItem from="1773871255559" duration="130000" />
+      <workItem from="1773875141982" duration="42000" />
+      <workItem from="1773875940560" duration="1395000" />
     </task>
     <servers />
   </component>

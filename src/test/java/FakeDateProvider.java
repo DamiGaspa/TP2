@@ -1,10 +1,10 @@
-import punto1.ProveedorDeFecha;
+import punto1.DateProvider;
 
 import java.time.LocalDate;
 
-public class FakeProveedorDeFecha implements ProveedorDeFecha {
+public class FakeDateProvider implements DateProvider {
     @Override
     public LocalDate fecha() {
-        return LocalDate.of(2025, 3, 6);
+        return LocalDate.of(2026, 3, 18);
     }
 }
